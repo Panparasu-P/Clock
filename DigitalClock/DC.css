@@ -22,7 +22,7 @@ body {
 
 h1 {
   background: linear-gradient(to right, rgb(1, 49, 3), rgb(0, 255, 0));
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: flex;
   align-items: center;
