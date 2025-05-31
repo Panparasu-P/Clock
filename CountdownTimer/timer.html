@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="timer.css">
+</head>
+
+<body>
+  <div class="containerAll">
+    <div class="container">
+      <h1>COUNTDOWN TIMER</h1>
+      <div class="timer" id="timerDisplay">
+        00:00:00
+      </div>
+      <div class="times">
+        <div>
+          <label for="hoursInput">Hours</label>
+          <input id="hoursInput" type="number" min="0" max="99" value="0">
+        </div>
+
+        <div>
+          <label for="minutesInput">Minutes</label>
+          <input id="minutesInput" type="number" min="0" max="59" value="0">
+        </div>
+
+        <div>
+          <label for="secondsInput">Seconds</label>
+          <input id="secondsInput" type="number" min="0" max="59" value="0">
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="startButton" class="buttonS">Start</button>
+        <button id="pauseButton" class="buttonS">Pause</button>
+        <button id="resetButton" class="buttonS">Reset</button>
+      </div>
+
+      <p id="messageBox" class="messageBox"></p>
+    </div>
+  </div>
+
+  <footer>
+    <button id="clockButton" class="next"><img src="image/clock.png"></button>
+
+    <button id="dcButton" class="next"><img src="image/digital clock.png" alt=""></button>
+
+    <button id="timerButton" class="next textStyle">Countdown Timer</button>
+
+    <button id="swButton" class="next"><img src="image/stop watch.png" alt=""></button>
+  </footer>
+  <script src="timer.js"></script>
+</body>
+
+</html>

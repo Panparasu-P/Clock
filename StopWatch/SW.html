@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop Watch</title>
+  <link rel="stylesheet" href="SW.css">
+</head>
+
+<body>
+  <footer>
+    <button id="clockButton" class="next"><img src="image/clock.png"></button>
+
+    <button id="dcButton" class="next"><img src="image/digital clock.png" alt=""></button>
+
+    <button id="timerButton" class="next"><img src="image/timer.png" alt=""></button>
+
+    <button id="swButton" class="next textStyle">Stop Watch</button>
+  </footer>
+  <div class="containerAll">
+    <div class="container">
+      <h1>STOP WATCH</h1>
+      <div class="time-display" id="time-display">00:00:00</div>
+
+      <div class="buttons-container">
+
+        <button id="start-button" class="stopwatch-button start-button">Start</button>
+
+        <button id="stop-button" class="stopwatch-button stop-button" disabled>Stop</button>
+
+        <button id="reset-button" class="stopwatch-button reset-button" disabled>Reset</button>
+
+        <button id="lap-button" class="stopwatch-button lap-button" disabled>Lap</button>
+
+      </div>
+
+      <div class="lap-times-container">
+        <h3>Lap Times</h3>
+        <ul id="lap-list" class="lap-list"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="SW.js"></script>
+</body>
+
+</html>
